@@ -1,23 +1,27 @@
+import { router } from '@kit.ArkUI'
+
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
-
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('HelloWorld')
-        .fontSize($r('app.float.page_text_font_size'))
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
+    Column() {
+      // 替换原有组件为导航按钮
+      Button('用户列表')
+        .width('80%')
+        .margin(10)
+        .backgroundColor('#409EFF')
         .onClick(() => {
-          this.message = 'Welcome';
+          router.pushUrl({ url: 'pages/UserListPage' })
         })
-    }
-    .height('100%')
-    .width('100%')
+
+
+      Button('用户资料')
+        .width('80%')
+        .margin(10)
+        .backgroundColor('#67C23A')
+        .onClick(() => {
+          router.pushUrl({ url: 'pages/UserProfilePage' })
+        })
+    }.justifyContent(FlexAlign.Center)
   }
 }
