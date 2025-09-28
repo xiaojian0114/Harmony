@@ -3,7 +3,7 @@ import { router } from '@kit.ArkUI'
 @Component
 export struct BackArrow {
   onBackAction: () => void = () => {
-    // 默认行为：返回首页
+
     router.replaceUrl({
       url: 'src/main/ets/pages/Index.ets'
     }).catch((err: Error) => {
@@ -18,7 +18,7 @@ export struct BackArrow {
       .margin({ left: 6, top: 12 })
       .backgroundColor('RED')
       .onClick(() => {
-        this.onBackAction() // 执行回调
+        this.onBackAction()
       })
   }
 }

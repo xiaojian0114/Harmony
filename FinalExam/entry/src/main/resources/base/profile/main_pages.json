@@ -1,0 +1,14 @@
+{
+  "src": [
+    "pages/TabPage",
+    "tabs/IndexPage",
+    "tabs/MyPage",
+    "pages/GensturePage",
+    "pages/ButtonPage",
+    "pages/ImagePage",
+    "pages/ListPage",
+    "pages/ScrollPage",
+    "pages/TextInputPage",
+    "pages/TextPage"
+  ]
+}

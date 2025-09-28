@@ -2,6 +2,13 @@
   "src": [
     "pages/Index",
     "pages/UserListPage",
-    "pages/UserProfilePage"
+    "pages/UserProfilePage",
+    "pages/ViewPage",
+    "pages/ExplictAnimationPage",
+    "pages/ExplictAnimationNoCirclePage",
+    "pages/CardPage",
+    "pages/KeyframeAnimationPage",
+    "pages/ProductDetail",
+    "pages/ProductList"
   ]
 }

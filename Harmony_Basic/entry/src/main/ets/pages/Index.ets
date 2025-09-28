@@ -5,7 +5,7 @@ import { router } from '@kit.ArkUI'
 struct Index {
   build() {
     Column() {
-      // 替换原有组件为导航按钮
+
       Button('用户列表')
         .width('80%')
         .margin(10)
